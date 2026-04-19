@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda India Elite | The Power of Dreams</title>
+    <meta name="description"
+        content="Discover the future of premium motorcycling with Honda India. Experience elite performance, futuristic design, and the legendary Power of Dreams.">
+    <meta name="keywords"
+        content="Honda India, Premium Bikes, Superbikes, CBR1000RR-R, Africa Twin, Goldwing, Rider Dashboard">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://honda-india-elite.com/">
+    <meta property="og:title" content="Honda India Elite | The Power of Dreams">
+    <meta property="og:description"
+        content="Explore elite performance and futuristic design with Honda India's premium bike lineup.">
+    <meta property="og:image" content="images/hero_preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Honda India Elite | The Power of Dreams">
+    <meta property="twitter:description"
+        content="Explore elite performance and futuristic design with Honda India's premium bike lineup.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header class="glass-nav main-header">
+        <div class="container header-top">
+            <a href="index.html" class="logo">HONDA</a>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search models or gear...">
+                    <button class="search-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div id="search-results" class="search-results-dropdown"></div>
+                </div>
+                <div id="profile-toggle" class="header-icon profile-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div id="cart-toggle" class="header-icon cart-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="category-nav">
+                    <ul class="nav-links">
+                        <li><a href="#" data-cat="all" class="active">ALL MODELS</a></li>
+                        <li><a href="#" data-cat="sport">SPORT</a></li>
+                        <li><a href="#" data-cat="adventure">ADVENTURE</a></li>
+                        <li><a href="#" data-cat="cruiser">CRUISER</a></li>
+                        <li class="nav-separator">|</li>
+                        <li><a href="equipment.html">EQUIPMENT</a></li>
+                        <li><a href="index.html#locations">DEALERS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-redesign">
+            <div class="hero-bg">
+                <img src="images/hero.jpg" alt="Honda Flagship Scene" class="bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content-standalone">
+                <div class="hero-content-redesign">
+                    <p class="hero-tagline reveal-text">2026 LINEUP</p>
+                    <h1 class="reveal-text">The Power<br>of <span>Dreams</span></h1>
+                    <p class="hero-desc reveal-text-slow">Experience the thrill of the ride with Honda's legendary
+                        performance and innovation.</p>
+                    <div class="hero-actions-redesign reveal-fade">
+                        <a href="#models" class="primary-btn-red">Explore Models <span>›</span></a>
+                        <a href="#locations" class="secondary-btn-outline">Find a Dealer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="models" class="models-section container">
+            <div class="section-header reveal-up">
+                <h2>THE INDIAN LINEUP</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="model-grid">
+                <!-- CBR1000RR-R -->
+                <div class="model-card reveal-up" data-cat="sport">
+                    <div class="model-img">
+                        <div class="card-badge">NEW</div>
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771527040078.png" alt="CBR1000RR-R Fireblade">
+                        <div class="quick-view-overlay">
+                            <div class="preview-stats">
+                                <span>215 HP</span>
+                                <span>201 KG</span>
+                                <span>14.5K RPM</span>
+                            </div>
+                            <div class="overlay-actions">
+                                <button onclick="openModal('cbr')" class="overlay-btn view">View Details</button>
+                                <button class="overlay-btn cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-val">(4.9)</span>
+                        </div>
+                        <h3>CBR1000RR-R</h3>
+                        <p class="specs-text">Super Sport | 215 HP</p>
+                        <div class="price">₹23,73,000</div>
+                        <div class="card-actions">
+                            <button onclick="openModal('cbr')" class="view-btn">Details</button>
+                            <button class="book-btn ripple-trigger">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CBR500R -->
+                <div class="model-card reveal-up" data-cat="sport">
+                    <div class="model-img">
+                        <div class="card-badge popular">POPULAR</div>
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771527650364.jpg" alt="CBR500R">
+                        <div class="quick-view-overlay">
+                            <div class="preview-stats">
+                                <span>47 HP</span>
+                                <span>192 KG</span>
+                                <span>8.6K RPM</span>
+                            </div>
+                            <div class="overlay-actions">
+                                <button onclick="openModal('cbr500')" class="overlay-btn view">View Details</button>
+                                <button class="overlay-btn cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-val">(4.7)</span>
+                        </div>
+                        <h3>CBR500R</h3>
+                        <p class="specs-text">Sport | 471 CC</p>
+                        <div class="price">₹5,20,000</div>
+                        <div class="card-actions">
+                            <button onclick="openModal('cbr500')" class="view-btn">Details</button>
+                            <button class="book-btn ripple-trigger">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Goldwing -->
+                <div class="model-card reveal-up" data-cat="cruiser">
+                    <div class="model-img">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771527650430.jpg" alt="Goldwing">
+                        <div class="quick-view-overlay">
+                            <div class="preview-stats">
+                                <span>125 HP</span>
+                                <span>383 KG</span>
+                                <span>Luxury</span>
+                            </div>
+                            <div class="overlay-actions">
+                                <button onclick="openModal('goldwing')" class="overlay-btn view">View Details</button>
+                                <button class="overlay-btn cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-val">(5.0)</span>
+                        </div>
+                        <h3>GOLDWING</h3>
+                        <p class="specs-text">Touring | 1833 CC</p>
+                        <div class="price">₹39,20,000</div>
+                        <div class="card-actions">
+                            <button onclick="openModal('goldwing')" class="view-btn">Details</button>
+                            <button class="book-btn ripple-trigger">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CB500X / NX500 -->
+                <div class="model-card reveal-up" data-cat="adventure">
+                    <div class="model-img">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/cb500x_new.jpg" alt="CB500X">
+                        <div class="quick-view-overlay">
+                            <div class="preview-stats">
+                                <span>47 HP</span>
+                                <span>199 KG</span>
+                                <span>8K RPM</span>
+                            </div>
+                            <div class="overlay-actions">
+                                <button onclick="openModal('cb500x')" class="overlay-btn view">View Details</button>
+                                <button class="overlay-btn cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-val">(4.6)</span>
+                        </div>
+                        <h3>CB500X</h3>
+                        <p class="specs-text">Adventure | 471 CC</p>
+                        <div class="price">₹5,90,000</div>
+                        <div class="card-actions">
+                            <button onclick="openModal('cb500x')" class="view-btn">Details</button>
+                            <button class="book-btn ripple-trigger">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Africa Twin -->
+                <div class="model-card reveal-up" data-cat="adventure">
+                    <div class="model-img">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/africa_twin_new.jpg" alt="Africa Twin">
+                        <div class="quick-view-overlay">
+                            <div class="preview-stats">
+                                <span>101 HP</span>
+                                <span>240 KG</span>
+                                <span>24.8L Fuel</span>
+                            </div>
+                            <div class="overlay-actions">
+                                <button onclick="openModal('africa')" class="overlay-btn view">View Details</button>
+                                <button class="overlay-btn cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-val">(4.9)</span>
+                        </div>
+                        <h3>AFRICA TWIN</h3>
+                        <p class="specs-text">Adventure | 1084 CC</p>
+                        <div class="price">₹15,96,000</div>
+                        <div class="card-actions">
+                            <button onclick="openModal('africa')" class="view-btn">Details</button>
+                            <button class="book-btn ripple-trigger">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CB1000R -->
+                <div class="model-card reveal-up" data-cat="sport">
+                    <div class="model-img">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771527039966.jpg" alt="CB1000R Black Edition">
+                        <div class="quick-view-overlay">
+                            <div class="preview-stats">
+                                <span>143 HP</span>
+                                <span>214 KG</span>
+                                <span>Neo Retro</span>
+                            </div>
+                            <div class="overlay-actions">
+                                <button onclick="openModal('cb1000')" class="overlay-btn view">View Details</button>
+                                <button class="overlay-btn cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-val">(4.8)</span>
+                        </div>
+                        <h3>CB1000R</h3>
+                        <p class="specs-text">Naked | Black Edition</p>
+                        <div class="price">₹14,46,000</div>
+                        <div class="card-actions">
+                            <button onclick="openModal('cb1000')" class="view-btn">Details</button>
+                            <button class="book-btn ripple-trigger">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gear" class="gear-section">
+            <div class="container">
+                <div class="gear-wrapper">
+                    <div class="gear-content reveal-left">
+                        <h2>HONDA EQUIPMENT</h2>
+                        <p>Engineered for excellence. Discover our range of genuine Honda riding gear, helmets, and
+                            performance parts.</p>
+                        <ul class="gear-list">
+                            <li>DPI Certified Helmets</li>
+                            <li>Tear-Resistant Jackets</li>
+                            <li>Smart Riding Gloves</li>
+                        </ul>
+                        <a href="equipment.html" class="primary-btn-red">Go to Equipment Page</a>
+                    </div>
+                    <div class="gear-image reveal-right">
+                        <img src="images/media__1771527650340.jpg" alt="Honda Equipment">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="locations" class="showroom-section container">
+            <div class="section-header reveal-up">
+                <h2>FIND YOUR SHOWROOM</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="showroom-grid">
+                <div class="showroom-card reveal-fade">
+                    <h3>NEW DELHI ELITE</h3>
+                    <p>South Extension II, New Delhi, India</p>
+                    <button class="loc-btn">Navigate</button>
+                </div>
+                <div class="showroom-card reveal-fade">
+                    <h3>MUMBAI COASTAL</h3>
+                    <p>Worli, Mumbai, Maharashtra, India</p>
+                    <button class="loc-btn">Navigate</button>
+                </div>
+                <div class="showroom-card reveal-fade">
+                    <h3>BANGALORE SILICON</h3>
+                    <p>Indiranagar, Bangalore, Karnataka, India</p>
+                    <button class="loc-btn">Navigate</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">HONDA<span>INDIA</span></div>
+                <p>Leading the world in motorcycle innovation. Ride the future with Honda India.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">BigWing India</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Owner Manuals</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <span id="social-fb">FB</span>
+                    <span id="social-ig">IG</span>
+                    <span id="social-tw">TW</span>
+                    <span id="social-yt">YT</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Honda Motor Joydip Acharjee. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>SHOPPING CART</h3>
+            <button class="close-btn" id="close-cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Items added via JS -->
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: ₹<span id="cart-total-val">0</span></div>
+            <button id="checkout-btn" class="primary-btn-red" style="width: 100%;">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-container" class="modal-overlay">
+        <div class="modal-content glass">
+            <button class="close-btn">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="modal-content glass">
+            <button class="close-btn" id="close-booking">&times;</button>
+            <div class="booking-form-wrap">
+                <h2 id="booking-bike-name">Book Your Dream Ride</h2>
+                <form id="bike-booking-form">
+                    <div class="form-group">
+                        <input type="text" id="user-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="user-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="user-phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="user-showroom" required>
+                            <option value="" disabled selected>Select Showroom</option>
+                            <option value="delhi">New Delhi Elite</option>
+                            <option value="mumbai">Mumbai Coastal</option>
+                            <option value="bangalore">Bangalore Silicon</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="primary-btn-red" style="width: 100%;">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

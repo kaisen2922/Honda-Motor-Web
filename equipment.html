@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Equipment | The Power of Dreams</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header class="glass-nav main-header">
+        <div class="container header-grid">
+            <a href="index.html" class="logo">HONDA</a>
+
+            <nav class="center-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#models">MOTORCYCLES</a></li>
+                    <li><a href="index.html#locations">DEALERS</a></li>
+                    <li><a href="equipment.html">EQUIPMENT</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search gear...">
+                    <span class="search-icon">🔍</span>
+                    <div id="search-results" class="search-results-dropdown"></div>
+                </div>
+                <div id="profile-toggle" class="header-icon profile-icon">
+                    👤
+                </div>
+                <div id="cart-toggle" class="header-icon cart-icon">
+                    🛒 <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="equipment-hero">
+            <div class="container">
+                <h1 class="reveal-up">GENUINE <span>EQUIPMENT</span></h1>
+                <p class="reveal-up">Ride with safety, style, and performance.</p>
+            </div>
+        </section>
+
+        <section class="equipment-grid container">
+            <div class="model-grid">
+                <!-- Helmet -->
+                <div class="gear-card reveal-up">
+                    <div class="gear-img-wrap">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771527650340.jpg" alt="Carbon Helmet">
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-val">(4.9)</span>
+                    </div>
+                    <h3>Carbon Fiber Pro</h3>
+                    <p>Ultra-lightweight racing helmet.</p>
+                    <div class="price">₹45,999</div>
+                    <button class="primary-btn-red ripple-trigger">Add to Cart</button>
+                </div>
+                <!-- Jacket -->
+                <div class="gear-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="gear-img-wrap">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771529345777.jpg" alt="Speed Demons Jacket">
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-val">(4.8)</span>
+                    </div>
+                    <h3>Speed Demons Jacket</h3>
+                    <p>Professional leather racing jacket.</p>
+                    <div class="price">₹28,499</div>
+                    <button class="primary-btn-red ripple-trigger">Add to Cart</button>
+                </div>
+                <!-- Boots -->
+                <div class="gear-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="gear-img-wrap">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771529345760.jpg" alt="Racing Boots">
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-val">(5.0)</span>
+                    </div>
+                    <h3>Pro Track Boots</h3>
+                    <p>High-performance reinforced racing boots.</p>
+                    <div class="price">₹18,999</div>
+                    <button class="primary-btn-red ripple-trigger">Add to Cart</button>
+                </div>
+                <!-- Gloves -->
+                <div class="gear-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="gear-img-wrap">
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <img src="images/media__1771529345789.jpg" alt="Performance Gloves">
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-val">(4.7)</span>
+                    </div>
+                    <h3>Apex Racing Gloves</h3>
+                    <p>Carbon-fiber knuckle protection gloves.</p>
+                    <div class="price">₹7,499</div>
+                    <button class="primary-btn-red ripple-trigger">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">HONDA</div>
+                <p>Safety and excellence in every ride. Genuine Honda gear.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Honda Motor Joydip Acharjee. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
